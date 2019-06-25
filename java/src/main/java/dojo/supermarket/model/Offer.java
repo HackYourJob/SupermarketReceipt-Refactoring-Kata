@@ -15,4 +15,8 @@ public class Offer {
         return this.product;
     }
 
+    public Discount calculate(double unitPrice, int quantityAsInt) {
+        return null;
+    }
+
 }

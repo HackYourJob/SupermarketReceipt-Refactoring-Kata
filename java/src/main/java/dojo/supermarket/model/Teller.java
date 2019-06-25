@@ -17,6 +17,10 @@ public class Teller {
         this.offers.put(product, new Offer(offerType, product, argument));
     }
 
+    public void addSpecialOffer(Offer offer) {
+        this.offers.put(offer.getProduct(), offer);
+    }
+
     public Receipt checksOutArticlesFrom(ShoppingCart theCart) {
         Receipt receipt = new Receipt();
         List<ProductQuantity> productQuantities = theCart.getItems();
